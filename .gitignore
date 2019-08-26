@@ -3,9 +3,9 @@
 *.iws
 *.iml
 *.ipr
-*.xml
-*.yml
-*.properties
+#*.xml
+#*.yml
+#*.properties
 *.class
 *.jar
 *.original
