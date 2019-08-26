@@ -11,4 +11,8 @@ public class IndexController {
         return "index";
     }
 
+    @RequestMapping("/hello")
+    public String hello(){
+        return "";
+    }
 }
