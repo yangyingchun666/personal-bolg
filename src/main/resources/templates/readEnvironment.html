@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:8080/javaBase -->
+<html lang="en" style="height: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Kodinger">
+    <meta name="keyword" content="Kodinger, template, html5, css3, bootstrap4">
+    <meta name="description" content="HTML5 and CSS3 Template Based on Bootstrap 4">
+    <title>Anakin的个人主页</title>
+    <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/sweetalert.css">
+    <link rel="stylesheet" href="css/stisla.css">
+</head>
+
+<body style="overflow: hidden;">
+<div class="article-read" style="display: block;">
+    <div class="article-read-inner">
+        <div class="article-back">
+            <a class="btn btn-outline-primary">
+                <i class="ion ion-chevron-left">
+                </i> 返回</a>
+        </div>
+        <h1 class="article-title">Java开发环境</h1>
+        <div class="article-metas">
+            <div class="meta">	2019.8.26</div>
+            <div class="meta">	Nature</div>
+            <div class="meta">	Anakin</div>
+        </div>
+        <figure class="article-picture">
+            <img src="img/news/img04.jpg">
+        </figure>
+        <div class="article-content">
+            <p>
+                <h3>1.JDK介绍:</h3>
+                &nbsp;&nbsp;JDK（Java Development Kit）是 Java 语言的软件开发工具包，主要用于移动设备、嵌入式设备上的java应用程序。JDK包含的基本组件包括:<br>
+                &nbsp;&nbsp;javac – 编译器，将源程序转成字节码<br>
+                &nbsp;&nbsp;jar – 打包工具，将相关的类文件打包成一个文件<br>
+                &nbsp;&nbsp;javadoc – 文档生成器，从源码注释中提取文档<br>
+                &nbsp;&nbsp;jdb – debugger，查错工具<br>
+                &nbsp;&nbsp;java – 运行编译后的java程序(.class后缀的)<br>
+                &nbsp;&nbsp;appletviewer:小程序浏览器，一种执行HTML文件上的Java小程序的Java浏览器。<br>
+                &nbsp;&nbsp;Javah:产生可以调用Java过程的C过程，或建立能被Java程序调用的C过程的头文件。<br>
+                &nbsp;&nbsp;Javap:Java反汇编器，显示编译类文件中的可访问功能和数据，同时显示字节代码含义。<br>
+                &nbsp;&nbsp;Jconsole: Java进行系统调试和监控的工具<br>
+                <h3>2.JDK安装:</h3>
+                &nbsp;&nbsp;<h5><a href="https://blog.csdn.net/Runing_IT_Man/article/details/77800639" target="_blank">JDK安装教程</a></h5>
+                <h3>3.环境变量配置:</h3>
+                <h5>配置环境变量：</h5>
+                &nbsp;&nbsp;让java jdk\bin目录下的工具，可以在任意目录下运行，原因是，将该工具所在目录告诉了系统，当使用该工具时，由系统帮我们去找指定的目录。<br>
+                <h5>环境变量的配置：</h5> 
+                <h6>1）：永久配置方式：</h6>
+                &nbsp;&nbsp;JAVA_HOME=%安装路径%\Java\jdk path=%JAVA_HOME%\bin <br>
+                <h6>2）：临时配置方式：</h6>
+                &nbsp;&nbsp;set path=%path%;C:\Program Files\Java\jdk\bin<br>
+                <h5>特点：</h5>
+                &nbsp;&nbsp;系统默认先去当前路径下找要执行的程序，如果没有，再去path中设置的路径下找。<br>
+                <h5>classpath的配置:</h5>
+                &nbsp;&nbsp;永久配置方式：classpath=.;c:\;e:\<br>
+                &nbsp;&nbsp;临时配置方式：set classpath=.;c:\;e:\<br>
+                <h5>注意：</h5>
+                &nbsp;&nbsp;在定义classpath环境变量时，需要注意的情况<br>
+                &nbsp;&nbsp;如果没有定义环境变量classpath，java启动jvm后，会在当前目录下查找要运行的类文件；<br>
+                &nbsp;&nbsp;如果指定了classpath，那么会在指定的目录下查找要运行的类文件。<br>
+                &nbsp;&nbsp;还会在当前目录找吗？两种情况：<br>
+                &nbsp;&nbsp;如果classpath的值结尾处有分号，在具体路径中没有找到运行的类，会默认在当前目录再找一次。<br>
+                &nbsp;&nbsp;如果classpath的值结果出没有分号，在具体的路径中没有找到运行的类，不会再当前目录找。 <br>
+                &nbsp;&nbsp;一般不指定分号，如果没有在指定目录下找到要运行的类文件，就报错，这样可以调试程序。<br>
+            </p>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/jquery.easeScroll.js"></script>
+<script src="dist/sweetalert.min.js"></script>
+<script src="js/stisla.js"></script>
+
+
+<div style="clear: both;"></div></body></html>
